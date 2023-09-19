@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/437f1b4df4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img
+          src="media/istockphoto-1473586651-170667a.webp"
+          alt=""
+          class="song-img"
+        />
+        <h1>Someone</h1>
+        <p>Fireboy DML</p>
+
+        <audio class="js-song">
+          <source
+            src="media/Fireboy DML - Someone (Lyrics).mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <input
+          type="range"
+          name=""
+          id="progress"
+          class="js-progress"
+          value="0"
+        />
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div><i class="fa-solid fa-play js-ctrl-icon"></i></div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
